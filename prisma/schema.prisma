@@ -1,0 +1,135 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    String  @id @default(uuid())
+  email String  @unique
+  accountCode String?
+  password String?
+  accountDetails AccountDetails[]
+  accountLevel String?
+  loginAttemp String?
+  macAddress String?
+  agentIdentity String?
+  image String?
+  nameOfStore String?
+  dateCreated DateTime  @default(now())
+  dateUpdated DateTime? @updatedAt
+}
+
+model CrowdMessages {
+  id    String  @id @default(uuid())
+  Messages String?
+  Sender String?
+  dateSent DateTime  @default(now())
+}
+
+model AccountDetails {
+  id        Int     @id @default(autoincrement())
+  userId String
+  User User @relation(fields: [userId], references: [id])
+  fullname    String?
+  storeName   String?
+  contactNo String?
+  Address String?
+  accountEmail  String
+}
+
+model Category{
+  id        Int     @id @default(autoincrement())
+  Name String?
+  status String?
+  icon String?
+  image String?
+}
+
+model ProductTypes{
+  id        Int     @id @default(autoincrement())
+  Category String?
+  Name String?
+}
+
+model Brandname{
+  id Int     @id @default(autoincrement())
+  ProductType String?
+  Name String?
+}
+
+model Inventory {
+  id          Int  @id @default(autoincrement())
+  styleCode   String @unique @default(uuid())
+  productType String?
+  category    String?
+  name        String?
+  status      String? 
+  dateCreated DateTime  @default(now())
+  dateUpdated DateTime? @updatedAt
+  agentEmail  String?
+  brandname String?
+  collectionItem Boolean?
+  childInventory ChildInventory[]
+}
+
+model ChildInventory {
+  id          Int       @id @default(autoincrement())
+  productCode String?
+  category    String?
+  productType String?
+  imageReferences String?
+  model String?
+  style_Code   String?
+  name        String?
+  color       String?
+  size        String?
+  price       Float?
+  stock       Float?
+  status      String?  // Changed from 'Status' to 'status' (convention)
+  thumbnail   String?
+  parentId    String?
+  creator     String?
+  editor      String?
+  dateCreated DateTime  @default(now())
+  dateUpdated DateTime? @updatedAt
+  agentEmail  String?
+  subImageFieldOut Inv_subImage[] // Assuming this is defined elsewhere correctly
+  childInventoryField Inventory? @relation(fields: [style_Code], references: [styleCode])
+}
+model Inv_subImage {
+    id Int @id @default(autoincrement())
+    ChildField ChildInventory  @relation(fields: [subImageRelationChild], references: [id])
+    subImageRelationParent Int?
+    subImageRelationChild Int
+    isVideo Boolean  @default(false)
+    ImagePath String?
+}
+model AllowedDevices {
+    id Int @id @default(autoincrement())
+    macAddress String?
+}
+
+model NumberOfViews {
+    id Int @id @default(autoincrement())
+    count String?
+    productCode String?
+    emailAddress String?
+    IpAddress String?
+    Country String?
+    dateVisited String?
+}
+
+model WebsiteVisits {
+  id Int @id @default(autoincrement())
+  IpAddress String
+  Country String
+  dateVisited String
+}

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dazzling-pillar-410914",
+  "private_key_id": "3d06d7093e94d28d2e0dedf13e154e3b76a27462",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDPgCMey9eAROad\nGDaUPSSNgmBhgg7bic5CpMc8lPMVKHXsY8N+exyKXeYX8z5iqFuYQEkBbB/p/yYr\ntQ808ehcH6yuVyb5yht17mecyIBvd1acIHxP2wwvtuAq++ZKb/XCG5TrtOxlQt/Z\n90UI5jz7hW/8FUYkRMFPYSp1ErU2hnF6UHNdo2JnjIk1g8TD41HQ9LfoYqgwq/pa\nNL0ye3+6iwTXqKngclhMLOKL6Srk/fYjJxRAvtuNcRi5MEZDTcTtQNVgv5B2cMjm\nN0xkXz9HaPCP05c6Gb2x1ecq03L1ESfDv/0+8wayM/TndRCjDxMOx78lV/a+emEb\nI8/7BDKrAgMBAAECggEALgprAILPQr1HBDViqtq0ORfkJc6TWGAH3Z6tPIJ6O0ga\nfkSWlIJhj0wNaWQGBCMCC9K7wC6LGEMOZ6VJhgBlA8fda2OYGNWg6TZoVA/i+5iZ\npZPJsXhTiGTF8ZOqAfs8pwCytugSiddgTv9AGJzpjA+MDP11bke5MtFG9+oaPkoJ\nK7aE3KuD5J5SLypbGCh+rHEO15FzD5NbMtWg0B08H2Xo2H5bbqIR7+v4HcURr2Xa\nWh4oXtIRLLvYPUN9LE9nCKh3rj8IvZtb/ySTfmr9VYCVbuXP9I9OI0Rwqmo26hkS\nvu6KMPcdHNMX1whMP3KskGWZ8jXQprz1Td6rdvenjQKBgQDo/Apg7IxV3XDmHD4R\nk2izQWAEb5KwgGlFuwitEaD8rvQ/Rn2w1y+UJMzTTCH2hwTuRz+m6WPJx34ggxvL\nqxSDxQWWCPVBA1UfjWalh6KQfn17cZzQ95gufaS9HQWiNHiCbkUJyU01f5hE4eph\nr8IY5K5uwoqDrLDDuwJMbQUW9wKBgQDj/6Fef/ofip+fqD+zccPHbnZRqpNy5SoW\n2CTuMxvf0fWItYJmQ+b9wb6UOQF+qy2Kl7hy7l7mB2LAa3Zl15T6a4jVphn0Yusv\nVkCUpDMWjnAnmr7zN0LG+XzN7j2eHY7+C1mtAU9XUiJ8CpMDq0opBLHRd7HfwG8U\n1fgQ+vWQ7QKBgQCvxhd+cHif/2VB9mTNlc0UEGqEbjjZeMfzl9w/1mECwmv7oQ8K\n8A4xUmJFt9aXy93od1CKeOKURTHfDYtW6Uec8nP4ceG2nvEF0QR0NhRrt0Ksc1bA\nQUxLJve2xcKOUc/pd5AWhgz+I7mZnmfaM2PYrA79+T/Pf+YMhXaCem2wmQKBgCSe\nhC6HY4b5XtXn0gNiPE2lwj8vpGsJv47XvGa9srZqJIOGk6EVOt565b8swL61g6UE\n5U0gWAGeIhBBskx9KaJm7x1Rhk2oLZn2wnydOs9epUjXI+Awefs3SwJQR3lDyhmn\nfQm6ciHWQU+m6yHluw2HgX/hN6J2Z+Dy1Nr1U8epAoGBAJWgIcAmHEPpPPKzVB/F\nxaNDxJ/ky1FZepa7gahpbYJaYxCT7ZzKsL9bBjUfFZDRneu1x5zx+bElTTT4iNvn\nvt9PtoAjCkM+0scVKfBcg+7G9VWxwjrVYmets3xIBQMJmIMSONKdYA7csgA3Abfu\nF5xUr1IfLWOBpT+eVRTI0fI5\n-----END PRIVATE KEY-----\n",
+  "client_email": "legitem-image-storage@dazzling-pillar-410914.iam.gserviceaccount.com",
+  "client_id": "109330063553365329749",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/legitem-image-storage%40dazzling-pillar-410914.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
